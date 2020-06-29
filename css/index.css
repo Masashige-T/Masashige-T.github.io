@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/* 全体設定 */
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    box-sizing: border-box;
+    font-size: 80%;
+  }
+}
+
+
+body {
+  background-color: #F5F5F5;
+  color: #00BCD4;
+  font-family: "Helvetica Neue",
+  Arial,
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  Meiryo,
+  sans-serif;
+  min-width: 320px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+@media screen and (max-width: 959px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #00BCD4;
+  text-decoration: none;
+}
+
+/* ヘッダー */
+
+.header {
+  background-color: #00BCD4;
+  color: #F5F5F5;
+  padding: 15px 25px;
+  width: 100%;
+}
+
+
+/* ナビゲーション */
+
+.nav {
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav li {
+  font-size: 1.2rem;
+  width: 25%;
+}
+
+/* 記事 */
+
+.articles section {
+  margin: 50px auto 100px;
+  width: 100%;
+}
+
+@media screen and (max-width: 959px) {
+  .articles {
+    margin: 50px auto 100px;
+    padding: 0 3%;
+    width: 100%;
+  }
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.section-image {
+  border-radius: 3px;
+  box-shadow: 0 0px 20px rgba(0,0,0,0.2);
+  height: auto;
+  margin: 25px auto;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.section-body {
+  font-size: 1.2rem;
+}
+
+/* フッター */
+
+.footer {
+  margin: 0 auto 50px;
+  text-align: center;
+  width: 100%;
+}
+
+/* スクロールボタン */
+
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  background-color: #00BCD4;
+  opacity: .8;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+}
+.scroll-top:hover {
+  cursor: pointer;
+}
